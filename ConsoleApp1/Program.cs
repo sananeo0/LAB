@@ -1,58 +1,59 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace NumberGuessingGame
+namespace ConsoleApp2
 {
-    class Program
+    internal class Program
     {
         static void Main(string[] args)
         {
-            while (true)
+            //string name = "senan";
+            //string surname = "Orujov";
+
+            //Console.WriteLine($"{name} ve {surname} ");
+
+            //Console.WriteLine(name + " " + surname); 100 den kicik dirse ustune 1 gel 
+
+            //int a = 1;
+            //int number = 106;
+            //if (number < 100) 
+            //{
+            //    Console.WriteLine(number + a);
+
+            //}
+            //else
+            //{
+
+            //Console.WriteLine(number - a);  0 dan kicik hemen ozw boywkdwrse 
+
+            int number = 5;
+            if (number < 0)
             {
-                Random random = new Random();
-                int targetNumber = random.Next(1, 101);
-
-                Console.WriteLine("1 ile 100 arasında bir sayı tuttum. Hadi tahmin et!");
-
-                while (true)
-                {
-                    Console.Write("Tahmininizi girin: ");
-                    string input = Console.ReadLine();
-
-                    if (!int.TryParse(input, out int guess))
-                    {
-                        Console.WriteLine("Geçersiz giriş! Lütfen bir sayı girin.");
-                        continue;
-                    }
-
-                    if (guess < 1 || guess > 100)
-                    {
-                        Console.WriteLine("Lütfen 1 ile 100 arasında bir sayı girin.");
-                    }
-                    else if (guess < targetNumber)
-                    {
-                        Console.WriteLine("Daha yüksek bir sayı tahmin edin.");
-                    }
-                    else if (guess > targetNumber)
-                    {
-                        Console.WriteLine("Daha düşük bir sayı tahmin edin.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Tebrikler! Doğru sayıyı tahmin ettiniz.");
-                        break; // Doğru cevabı bulduk, içteki döngüyü sonlandırın.
-                    }
-                }
-
-                Console.Write("Yeniden oynamak istiyor musunuz? (E/H): ");
-                string playAgainInput = Console.ReadLine().Trim().ToLower();
-
-                if (playAgainInput != "e")
-                {
-                    break; // Dıştaki döngüyü sonlandırın ve oyunu kapatın.
-                }
+                Console.WriteLine(number);
             }
+            else if (number > 0 && number < 10)
+            {
+                number++;
+                Console.WriteLine(number);
+            }
+            else if (number > 10)
+            {
+                number--;
+                Console.WriteLine(number);
+            }
+            else
+            {
+                Console.WriteLine("SAĞOL");
+            }
+            Console.ReadLine();
 
-            Console.WriteLine("Oyun bitti. İyi günler!");
         }
     }
+
 }
+
