@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ttt", "ttt.csproj", "{41F4D491-1912-48E3-8C0C-F31D7BC45DE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41F4D491-1912-48E3-8C0C-F31D7BC45DE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F4D491-1912-48E3-8C0C-F31D7BC45DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F4D491-1912-48E3-8C0C-F31D7BC45DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F4D491-1912-48E3-8C0C-F31D7BC45DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA13E587-93D5-4678-B748-4ECE2CEC80FC}
+	EndGlobalSection
+EndGlobal
